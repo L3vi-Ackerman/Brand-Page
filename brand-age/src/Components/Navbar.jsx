@@ -13,12 +13,10 @@ function Navbar() {
                     <li><a href="">LOCATION</a></li>
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">CONTACT</a></li>
+                    <i class="ri-menu-3-line"></i>
                 </div>
                 <div className="navbar-login-btn">
-                    <Button className='login-btn' title='Login' btnStyle={{
-                        color: 'white',
-                        backgroundColor: '#D4242E'
-                    }} />
+                    <Button className='login-btn' title='Login' />
                 </div>
             </div>
         </>
