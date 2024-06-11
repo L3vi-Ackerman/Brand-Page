@@ -30,13 +30,14 @@ body {
   z-index: 1000;
 }
 
-.navbar-links i {
+.mobile i {
   font-size: 1.5vw;
   display: none;
 }
 
 .navbar-links {
   display: flex;
+
 }
 
 .login-btn {
@@ -170,12 +171,14 @@ button {
   font-size: 1vw;
   margin-left: 2vw;
 }
+
 @media(max-width:800px) {
   .navbar {
-    height:20vw;
+    height: 20vw;
     width: 100%;
     font-size: 4vh;
   }
+
   .navbar-logo {
     width: 30%;
     display: flex;
@@ -184,7 +187,8 @@ button {
     margin: 10px;
     padding: 10px;
   }
-  .navbar-logo img{
+
+  .navbar-logo img {
     padding: 2vw;
     margin: 2vw;
     object-fit: cover;
@@ -192,15 +196,48 @@ button {
     width: 100%;
   }
 
+  .navbar-links {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 90px;
+    right: -300px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 300px;
+    border: 2px solid black;
+    padding: 5px 0px 0px 0px;
+  }
   .navbar-links li {
-    display: none;
+    width: 100%;
+    padding: 8px;
+    margin-right: 10px;
+    border-bottom: 1px solid grey;
+  }
+  .navbar-links li:last-child{
+    border: none;
+  }
+  .active {
+    right: 0px;
+    /* background-color: #ddd; */
+  }
+
+  .navbar-links li {
+    /* display: none; */
+    font-size: 5vw;
+    margin-bottom: 2vw;
+
   }
 
   .navbar-login-btn {
     display: none;
   }
 
-  .navbar-links i {
+  .mobile i {
     display: block;
     font-size: 8vw;
     margin: 10px;
@@ -210,7 +247,8 @@ button {
   .category-btn {
     font-size: 4vw;
   }
-  p{
+
+  p {
     text-align: start;
     font-size: 4vw;
   }
@@ -240,10 +278,12 @@ button {
     font-size: 5vh;
     margin-bottom: 20px;
   }
-  .extra-logos{
+
+  .extra-logos {
     height: 5vh;
-    width:10vh;
+    width: 10vh;
   }
+
   .hero-left h3 {
     width: 100%;
     font-size: 2vh;
